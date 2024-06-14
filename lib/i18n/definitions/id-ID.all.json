@@ -1,0 +1,38 @@
+{
+  "err_bad_request_title": {
+    "other": "Permintaan Salah"
+  },
+  "err_bad_request_message": {
+    "other": "Parameter Permintaan Salah"
+  },
+  "err_internal_server_title": {
+    "other": "Kesalahan Server"
+  },
+  "err_internal_server_message": {
+    "other": "Gagal memproses, silahkan coba lagi dalam beberapa saat."
+  },
+  "err_email_registered_title": {
+    "other": "Email Telah Terdaftar"
+  },
+  "err_email_registered_message": {
+    "other": "Email telah terdaftar, anda dapat lanjut untuk sign-in."
+  },
+  "err_email_unverified_title": {
+    "other": "Email Belum Terverifikasi"
+  },
+  "err_email_unverified_message": {
+    "other": "Email telah terdaftar, silahkan verifikasi email anda terlebih dahulu."
+  },
+  "err_email_registered_by_external_provider_title": {
+    "other": "Email Telah Terdaftar"
+  },
+  "err_email_registered_by_external_provider_message": {
+    "other": "Email anda telah terdaftar dengan social login. Gunakan social login atau atur ulang password untuk lanjut."
+  },
+  "err_email_or_password_title": {
+    "other": "Login Gagal"
+  },
+  "err_email_or_password_message": {
+    "other": "Email atau password anda tidak valid"
+  }
+}

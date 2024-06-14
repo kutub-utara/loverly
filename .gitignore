@@ -1,0 +1,28 @@
+cover*.out
+.tmp
+
+# Test binary
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+coverage.html
+
+# Local specific files
+.DS_Store
+.vscode
+.idea
+
+# Docker Storage Files
+etc/storage/
+
+#Go
+vendor/
+log/
+.exe
+
+
+# Environment Variables
+.env
+*/*.env
+.test.env

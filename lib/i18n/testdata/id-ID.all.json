@@ -1,0 +1,17 @@
+{
+    "msg_needs_translation": {
+        "other": "Pesan ini butuh terjemahan"
+    },
+    "thanks": {
+        "other": "Terima kasih"
+    },
+    "invalid_customer_message": {
+        "other": "Tidak bisa mengambil informasi pelanggan"
+    },
+    "invalid_customer_title": {
+        "other": "Judul pelanggan tidak valid"
+    },
+    "invalid_customer_subtitle": {
+        "other": "Subtitle pelanggan tidak valid"
+    }
+}

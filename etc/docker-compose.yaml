@@ -1,0 +1,27 @@
+version: '3'
+services:
+  postgres:
+    # platform: linux/amd64
+    image: postgres:latest
+    restart: on-failure
+    ports:
+      - "5432:5432"
+    volumes:
+      - "./storage/postgres/scripts:/docker-entrypoint-initdb.d/"
+      - "./storage/postgres/data:/var/lib/postgresql/data"
+    environment:
+      LC_ALL: C.UTF-8
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: password
+
+  redis:
+    image: redis:6
+    restart: on-failure
+    entrypoint:
+      - "redis-server"
+    volumes:
+      - "./storage/redis/conf:/usr/lib/redis/conf"
+      - "./storage/redis/modules:/usr/lib/redis/modules"
+      - "./storage/redis/data:/data"
+    ports:
+      - "6379:6379"

@@ -1,0 +1,44 @@
+{  
+  "err_bad_request_title": {
+    "other": "Bad Request"
+  },  
+  "err_bad_request_message": {
+    "other": "Invalid request parameters"
+  },
+  "err_unauthorized_title": {
+    "other": "Unauthorized"
+  },
+  "err_unauthorized_message": {
+    "other": "Not authorized"
+  },
+  "err_internal_server_title": {
+    "other": "Server Error"
+  },
+  "err_internal_server_message": {
+    "other": "Failed to process request, please try again in a moment."
+  },
+  "err_email_registered_title": {
+    "other": "Email Registered"
+  },
+  "err_email_registered_message": {
+    "other": "Email was registered, you can continue to sign-in."
+  },
+  "err_email_unverified_title": {
+    "other": "Email Unverified"
+  },
+  "err_email_unverified_message": {
+    "other": "Email was registered, please verify your email to continue."
+  },
+  "err_email_registered_by_external_provider_title": {
+    "other": "Email Registered"
+  },
+  "err_email_registered_by_external_provider_message": {
+    "other": "Your email was registered by social login. You can set a password or use social login to continue."
+  },
+  "err_email_or_password_title": {
+    "other": "Login Failed"
+  },
+  "err_email_or_password_message": {
+    "other": "Invalid email or password"
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "msg_needs_translation": {
+        "other": "This message needs translation"
+    },
+    "thanks": {
+        "other": "Thank you"
+    },
+    "invalid_customer_message": {
+        "other": "Couldn't fetch customer information"
+    },
+    "invalid_customer_title": {
+        "other": "Invalid customer title"
+    },
+    "invalid_customer_subtitle": {
+        "other": "Invalid customer subtitle"
+    }
+}
