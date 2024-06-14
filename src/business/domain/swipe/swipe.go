@@ -142,6 +142,11 @@ func (s *swipe) Create(ctx context.Context, param entity.Swipe) (int64, error) {
 		s.log.Error(ctx, fmt.Sprintf("error when redis delete with pattern: %s, %s", DeleteKey, redisErr))
 	}
 
+	redisErr = s.rds.DelWithPattern(ctx, "profiles:*")
+	if redisErr != nil {
+		s.log.Error(ctx, fmt.Sprintf("error when redis delete with pattern: %s, %s", DeleteKey, redisErr))
+	}
+
 	return swipes.ID, nil
 }
 

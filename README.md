@@ -62,3 +62,5 @@ And that's it! `loverly` is already running on your machine. To access it try th
 - `GET:     http://localhost:3003/v1/profile` -> for get detail profile
 - `GET:     http://localhost:3003/v1/subscription` -> for get detail subscription plan you have
 - `POST:    http://localhost:3003/v1/subscription` -> for subscribe a package plan
+
+Or, import the collection JSON (`loverly.json`) into Postman for easy endpoint testing.
