@@ -8,6 +8,7 @@ import (
 	"loverly/src/business/domain/profile"
 	"loverly/src/business/domain/user"
 	"loverly/src/business/entity"
+	appErr "loverly/src/errors"
 
 	"golang.org/x/crypto/bcrypt"
 )
@@ -40,12 +41,12 @@ func (c *customer) SignIn(ctx context.Context, params entity.SignInParam) (*enti
 
 	user, err := c.user.GetByEmail(ctx, params.Email)
 	if err != nil {
-		return resp, err
+		return resp, appErr.ErrInvalidEmailOrPassword
 	}
 
 	err = bcrypt.CompareHashAndPassword([]byte(user.Password), []byte(params.Password))
 	if err != nil {
-		return resp, err
+		return resp, appErr.ErrPasswordNotMatch
 	}
 
 	token, err := c.jwt.NewAccessToken(ctx, user.ID, []string{}, jwt.AccessTypeOnline)
